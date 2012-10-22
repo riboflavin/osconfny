@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Kitify::Application.load_tasks
+OSConf::Application.load_tasks

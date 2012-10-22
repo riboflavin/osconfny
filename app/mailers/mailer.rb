@@ -1,11 +1,11 @@
 class Mailer < ActionMailer::Base
-  default :from => "Kitify <admin@kitify.com>"
-  default :bcc => "admin@kitify.com"
+  default :from => "OSConf <admin@OSConf.com>"
+  default :bcc => "admin@OSConf.com"
 
   def waiting(url)
 #    this doesn't work for some reason - won't ever switch to test address
     @url = url
-    mail(:to => "admin@kitify.com", :subject => "Kit waiting for review")
+    mail(:to => "admin@OSConf.com", :subject => "Kit waiting for review")
   end
 
   def welcome(address, prev_address, edit_url, view_url)
@@ -15,7 +15,7 @@ class Mailer < ActionMailer::Base
 
     @edit_url  = edit_url
     @view_url  = view_url
-    mail(:to => address, :cc => prev_address, :subject => "Thanks for setting up your kit on Kitify!")
+    mail(:to => address, :cc => prev_address, :subject => "Thanks for setting up your kit on OSConf!")
   end
 
   def changed(address, prev_address, edit_url, view_url)

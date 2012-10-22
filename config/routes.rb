@@ -1,4 +1,4 @@
-Kitify::Application.routes.draw do
+OSConf::Application.routes.draw do
   root :to => "home#index"
     
   # attachments

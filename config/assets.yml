@@ -11,14 +11,14 @@ javascripts:
         - public/javascripts/vendor/mustache.js
         - public/javascripts/vendor/bootstrap.js
         - public/javascripts/vendor/jquery.cycle.all.js
-        - public/javascripts/components/k-front.js
+        - public/javascripts/components/c-front.js
 
 stylesheets:
     all:
         - public/stylesheets/vendor/bootstrap.min.css
         - public/stylesheets/vendor/jquery-ui.css
         #- public/stylesheets/vendor/jquery-fileupload-ui.css
-        - public/stylesheets/k-core.css
-        - public/stylesheets/k-layout.css
-        - public/stylesheets/k-typography.css
-        - public/stylesheets/k-home.css
+        - public/stylesheets/c-core.css
+        - public/stylesheets/c-layout.css
+        - public/stylesheets/c-typography.css
+        - public/stylesheets/c-home.css

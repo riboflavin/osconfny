@@ -110,7 +110,7 @@ small{font-size:100%;}
 cite{font-style:normal;}
 code,pre{padding:0 3px 2px;font-family:Menlo,Monaco,"Courier New",monospace;font-size:12px;color:#333333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 code{padding:3px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8;}
-pre{display:block;padding:8.5px;margin:0 0 9px;font-size:12px;line-height:18px;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;white-space:pre;white-space:pre-wrap;word-break:break-all;}pre.prettyprint{margin-bottom:18px;}
+pre{display:block;padding:8.5px;margin:0 0 9px;font-size:12px;line-height:18px;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;white-space:pre;white-space:pre-wrap;word-break:breac-all;}pre.prettyprint{margin-bottom:18px;}
 pre code{padding:0;background-color:transparent;}
 .label{padding:1px 3px 2px;font-size:9.75px;font-weight:bold;color:#ffffff;text-transform:uppercase;background-color:#999999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 .label-important{background-color:#b94a48;}
@@ -336,12 +336,12 @@ button.btn.small,input[type="submit"].btn.small{*padding-top:3px;*padding-bottom
 .icon-plus-sign{background-position:0 -96px;}
 .icon-minus-sign{background-position:-24px -96px;}
 .icon-remove-sign{background-position:-48px -96px;}
-.icon-ok-sign{background-position:-72px -96px;}
+.icon-oc-sign{background-position:-72px -96px;}
 .icon-question-sign{background-position:-96px -96px;}
 .icon-info-sign{background-position:-120px -96px;}
 .icon-screenshot{background-position:-144px -96px;}
 .icon-remove-circle{background-position:-168px -96px;}
-.icon-ok-circle{background-position:-192px -96px;}
+.icon-oc-circle{background-position:-192px -96px;}
 .icon-ban-circle{background-position:-216px -96px;}
 .icon-arrow-left{background-position:-240px -96px;}
 .icon-arrow-right{background-position:-264px -96px;}

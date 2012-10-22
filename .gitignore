@@ -3,8 +3,8 @@
 *.env
 bugs
 
-kitify.sublime-project
-kitify.sublime-workspace
+OSConf.sublime-project
+OSConf.sublime-workspace
 log/development.log
 /tmp/
 tmp 

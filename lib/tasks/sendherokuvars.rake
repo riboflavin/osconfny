@@ -4,7 +4,7 @@ namespace :sendherokuvars do
     CONFIG = YAML.load_file('config/heroku_vars.yml')['live']
     command = "heroku config:add"
     CONFIG.each {|key, val| command << " #{key}=#{val} " if val }
-    command << " --app kitify-live"
+    command << " --app OSConf-live"
     puts command
     system command  
   end
@@ -14,7 +14,7 @@ namespace :sendherokuvars do
     CONFIG = YAML.load_file('config/heroku_vars.yml')['stage']
     command = "heroku config:add"
     CONFIG.each {|key, val| command << " #{key}=#{val} " if val }
-    command << " --app kitify-stage"
+    command << " --app OSConf-stage"
     puts command
     system command  
   end

@@ -1,10 +1,10 @@
 default: &DEFAULT
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   min_messages: warning
 
   host: <%=ENV['db_host'] %>
-  database: <%=ENV['db_db']%>
+  database: 'osconfny'
   username: <%=ENV['db_username']%>
   password: <%=ENV['db_password']%>
 

@@ -2,11 +2,11 @@
  * #93d050 green
  */
 
-.k-shadow { box-shadow:0 2px 8px rgba(0, 0, 0, 0.3); }
-.k-shadow-big { box-shadow:0 2px 16px rgba(0, 0, 0, 0.5); }
+.c-shadow { box-shadow:0 2px 8px rgba(0, 0, 0, 0.3); }
+.c-shadow-big { box-shadow:0 2px 16px rgba(0, 0, 0, 0.5); }
 
-.k-corner-all { border-radius:6px; }
-.k-corner-right { border-radius:0 6px 6px 0; }
+.c-corner-all { border-radius:6px; }
+.c-corner-right { border-radius:0 6px 6px 0; }
 
 .error { border-color:#ee5f5b;color:#b94a48; }
 
@@ -19,4 +19,4 @@
 
 #modal-backdrop {display: none; position: absolute; top: 0px; left: 0px; z-index: 25; background-color: gray; opacity: .5; height: 100%; width: 100%;}
 
-#kitify-navbar-logo {margin-right: 6px;}
+#OSConf-navbar-logo {margin-right: 6px;}

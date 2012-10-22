@@ -12,7 +12,3 @@ gem "pg"
 gem "haml"
 gem "thin"
 gem "heroku"
-
-group :development do
-  gem "heroku"
-end

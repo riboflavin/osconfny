@@ -10,5 +10,8 @@ gem "fog", '~>1.1.2'
 gem "sendgrid"
 gem "pg"
 gem "haml"
-gem "thin"
-gem "heroku"
+
+group :development do
+  gem "heroku"
+  #gem "thin"
+end

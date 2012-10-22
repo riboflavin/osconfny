@@ -1,0 +1,24 @@
+package_assets: off
+compress_assets: off
+
+javascripts:
+    all:
+        - public/javascripts/vendor/jquery.min.js
+        - public/javascripts/vendor/jquery-ui.min.js
+        #- public/javascripts/vendor/jquery.fileupload.js
+        - public/javascripts/vendor/jquery.iframe-transport.js
+        - public/javascripts/vendor/jquery.fileupload-ui.js
+        - public/javascripts/vendor/mustache.js
+        - public/javascripts/vendor/bootstrap.js
+        - public/javascripts/vendor/jquery.cycle.all.js
+        - public/javascripts/components/k-front.js
+
+stylesheets:
+    all:
+        - public/stylesheets/vendor/bootstrap.min.css
+        - public/stylesheets/vendor/jquery-ui.css
+        #- public/stylesheets/vendor/jquery-fileupload-ui.css
+        - public/stylesheets/k-core.css
+        - public/stylesheets/k-layout.css
+        - public/stylesheets/k-typography.css
+        - public/stylesheets/k-home.css

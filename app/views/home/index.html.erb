@@ -2,67 +2,34 @@
 	<%= include_stylesheets :all %>
 <% end %>
 
-<div id="main-container" style="min-height: 550px;">
-<h1 style="padding: 30px; margin-top: 34px; margin-bottom: 36px; background-color: whitesmoke;">OSConf makes it easy (and fun!) to document, share and sell kits for your do-it-yourself projects.<a id="try-it-now" class="btn btn-purple btn-large btn-vlarge" href="/new">Try it now!</a></h1>
-
-<a class="left carousel-control" id="c-left">‹</a>
-<a class="right carousel-control" id="c-right">›</a>
-
-<div id="slide-container" class="hide">
-      
-      <div class="c-corner-all c-shadow kit-feature">
-      <div class="sl-interior">
-      <h1>Document</h1>
-      <p>Add and edit photos, step-by-step instructions, and materials lists quickly and easily. Update your project at any time.</p>
-      <a class="btn btn-purple btn-large" href="/new">Get started ></a>
-      </div>
-      </div>
-
-      <div class="c-corner-all c-shadow kit-feature">
-      <div class="sl-interior">
-      <h1>Present</h1>
-      <p>Customize fonts, colors and images so your instructions look just the way you want them to.</p>
-      <a class="btn btn-purple btn-large" href="/new">Get started ></a>
-      </div>
-      </div>
-
-      <div class="c-corner-all c-shadow kit-feature">
-      <div class="sl-interior">
-      <h1>Publish</h1>
-      <p>We'll host your project in a great-looking, easy-to-read format that you can embed on your blog or share using a link.</p>
-      <a class="btn btn-purple btn-large" href="/new">Get started ></a>
-      </div>
-      </div>
-          
-      <div class="c-corner-all c-shadow kit-feature">
-      <div class="sl-interior">
-      <h1>Sell</h1>
-      <p>And we'll even sell a kit for you! OSConf takes care of the sourcing, packing, shipping and tracking. We pay you when your kit sells.</p>
-      <a class="btn btn-purple btn-large" href="/new">Get started ></a>
-      </div>
-      </div>
-
+<div id="title-container" style="padding:30px;">
+<h1 style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9">Open source is powering the NYC tech scene.</h1>
 </div>
 
-<div id="pager" class="c-corner-all c-shadow hide"></div>
-
+<div id="main-container" style="">
+<div style="padding-left: 60px; padding-right: 60px;">
+<h2>NY Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h2>
 </div>
 
+<div class="features">
+<div class="featurebox c-shadow-big">
+  <h2>Attend</h2>
+</div>
+
+<div class="featurebox c-shadow-big">
+  <h2>Speak</h2>
+</div>
+
+<div class="featurebox c-shadow-big">
+  <h2>Sponsor</h2>
+</div>
+</div>
+</div>
+
+<div id="title-container" style="padding:30px;">
+<p style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9;">Supporter logos go here...</p>
+</div>
 
 <% content_for :js do %>
 	<%= include_javascripts :all %>
-<script>
-$(document).ready(function() {
-      $('#slide-container').removeClass('hide');
-      $('#pager').removeClass('hide');
-
-      $('#slide-container').cycle({fx: 'shuffle', speed: '750', delay: -3500, timeout: 15000, next: '#c-right', prev: '#c-left', pager: '#pager',
-
-       // callback fn that creates a thumbnail to use as pager anchor 
-       pagerAnchorBuilder: function(idx, slide) { 
-       return '<a href="#">&#9679;</a>'; 
-       } 
-      });      
-});
-</script>
 <% end %>

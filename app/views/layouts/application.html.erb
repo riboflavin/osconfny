@@ -7,14 +7,10 @@
 </head>
 <body>
 <% unless @topbar_v == 'hide' %>
-<%= render :partial => "/shared/topbar", :locals => { :active => @active, :user => @user, :kit => @kit, :user_kits => @user_kits } %>
+<!--<%= render :partial => "/shared/topbar", :locals => { :active => @active } %>-->
 <% end %>
  
     <%= yield %>
-
-<% unless @bottombar_v == 'hide' %>
-<%= render :partial => "shared/bottombar" %>
-<% end %>
 
 	<%= yield :js %>
 	<script type="text/javascript">

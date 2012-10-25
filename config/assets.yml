@@ -19,6 +19,5 @@ stylesheets:
         - public/stylesheets/vendor/jquery-ui.css
         #- public/stylesheets/vendor/jquery-fileupload-ui.css
         - public/stylesheets/c-core.css
-        - public/stylesheets/c-layout.css
         - public/stylesheets/c-typography.css
         - public/stylesheets/c-home.css

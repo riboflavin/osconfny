@@ -1,0 +1,55 @@
+
+h1 {color: #444 ;font-size:30px;text-shadow:0 0 4px rgba(200, 200, 200, 0.6);}
+
+#content-inner { background-color:#505050;color:#fafafa;border:1px solid #111;border-radius:16px; }
+
+.featurebox {
+  height: 250px; 
+  width: 250px; 
+  margin: 10px; 
+  margin-top: 0px; 
+  padding: 10px; 
+  text-align: center; 
+  background-color: whitesmoke; 
+  opacity: 1; 
+  float: left;
+  opacity: .9;
+}
+
+.bottombox {
+  height: 250px; 
+  width: 250px; 
+  margin: 10px; 
+  margin-top: 0px; 
+  padding: 10px; 
+  text-align: center; 
+  background-color: whitesmoke; 
+  opacity: 1; 
+  float: left;
+}
+
+.features
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 900px;
+  height: 300px;
+}
+
+.btn-purple {
+  border: none;
+  background-repeat: repeat-x;
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", #900aff, #540099));
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#900aff), to(#540099));
+  background-image: -moz-linear-gradient(top, #900aff, #540099);
+  background-image: -ms-linear-gradient(top, #900aff, #540099);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #900aff), color-stop(100%, #540099));
+  background-image: -webkit-linear-gradient(top, #900aff, #540099);
+  background-image: -o-linear-gradient(top, #900aff, #540099);
+  background-image: linear-gradient(#900aff, #540099);
+  background-color: #540099 !important;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.36);
+  -webkit-font-smoothing: antialiased;
+}

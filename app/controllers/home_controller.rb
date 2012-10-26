@@ -14,4 +14,9 @@ class HomeController < ApplicationController
 		end    
   end
 
+  def viewall
+  		entries = Entry.all
+  		render :json => {'entries' => entries}
+  end
+
 end

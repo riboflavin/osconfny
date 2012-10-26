@@ -4,12 +4,4 @@ class ContentController < ApplicationController
     @active = "about"
   end
 
-  def contact
-    @active = "contact"
-  end
-
-  def tandc
-    @active = "tandc"
-  end
-
 end

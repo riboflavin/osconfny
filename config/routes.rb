@@ -1,7 +1,7 @@
 OSConf::Application.routes.draw do
-  root :to => "home#index"
+  #root :to => "home#index"
     
-  # more or less static content
-  get "/about" => "content#about"
+  get "/" => "home#index"
+  post "/" => "home#post"
 
 end

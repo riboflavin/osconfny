@@ -2,36 +2,49 @@
 	<%= include_stylesheets :all %>
 <% end %>
 
-<div id="title-container" style="padding:30px;">
-<h1 style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9">Open source is powering the NYC tech scene.</h1>
+<div style="padding: 30px 30px 0px 30px;">
+<h1 style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9;">Open source is powering the NYC tech scene.</h1>
+<h3 style="color:white; padding: 20px 30px 0px 30px; line-height: 30px;">NY Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
 </div>
 
-<div id="main-container" style="">
-<div style="padding-left: 60px; padding-right: 60px;">
-<h2 style="color:white;">NY Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h2>
-</div>
+<div style="padding:30px; font-size: 20px;">
+<form class="form-horizontal" style="padding: 20px 30px 0px 30px; background-color: whitesmoke; opacity: .9;" id="signup_form">
+ <div class="control-group">
+    <label class="control-label" for="inputPassword">I'd like to...</label>
 
-<div class="features">
-<div class="featurebox c-shadow-big">
-  <h2>Attend</h2>
-  <p>Find out when registration is open by signing up for our mailing list:</p>
-</div>
+    	<div class="controls">
+		<label class="checkbox">
+        <input type="checkbox" name="attend"><b>Attend.</b> Let me know when registration opens!
+      	</label>
+    	</div>
 
+    	<div class="controls">
+		<label class="checkbox">
+        <input type="checkbox" name="sponsor"><b>Support the NYC open source community</b> by sponsoring the event.
+      	</label>
+    	</div>
 
-<div class="featurebox c-shadow-big">
-  <h2>Speak</h2>
-  <p>We're looking for speakers on topics relates Propose a talk on how open source technology is powering NYC</p>
-</div>
+    	<div class="controls">
+		<label class="checkbox">
+        <input type="checkbox" name="talk" id="talk"><b>Give a talk.</b>
+      	</label>
+    	</div>
 
-<div class="featurebox c-shadow-big">
-  <h2>Sponsor</h2>
-  <p>Support the NYC technology community by sponsoring the conference</p>
-</div>
-</div>
-</div>
+		<div class="controls" id="talkdetails" style="display: none;">
+		<label>Please tell us in a few sentences what your talk will be about.</label>
+    	<textarea rows="3" style="width: 400px;" name="talkdesc"></textarea>
+    	</div>
 
-<div id="title-container" style="padding:30px;">
-<p style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9;">Supporter logos go here...</p>
+    	<div class="control-group">
+		<div class="form-actions">
+		  <input type="text" placeholder="Email address" id="email_address" name="email">  
+		  <button type="submit" class="btn btn-primary" id="submit_button" onclick="return false;">Submit</button>
+		  <label style="margin-top:4px; display: none;" id="thanks"></label>
+		</div>
+		</div>
+</form>
+
+<!--<p style="font-size: 12px; padding: 30px; background-color: whitesmoke; ">Supporter logos go here...</p>-->
 </div>
 
 <small style="padding: 10px; color: white;">Attribution</small>

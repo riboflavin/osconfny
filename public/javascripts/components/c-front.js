@@ -4,6 +4,7 @@ $('#talk').bind('click',function(){$('#talkdetails').toggle()});
 
 $('#submit_button').bind('click',function(){
 	$('#submit_button').text("Working...").removeClass('btn-danger').removeClass('btn-primary').removeClass('btn-success');
+	$('#email_address').parent().parent().removeClass('error').removeClass('success');
 	$.post("/",$('#signup_form').serialize(),function(data){
 		console.log(data.response);
 		if (data.response == 'OK') {

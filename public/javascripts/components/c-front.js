@@ -3,9 +3,9 @@ $('#talk').attr('checked',false);
 $('#talk').bind('click',function(){$('#talkdetails').toggle()}); 
 
 $('#submit_button').bind('click',function(){
+	$('#submit_button').text("Working...").removeClass('btn-danger').removeClass('btn-primary').removeClass('btn-success');
 	$.post("/",$('#signup_form').serialize(),function(data){
 		console.log(data.response);
-		$('#submit_button').text("Working...");
 		if (data.response == 'OK') {
 			$('#thanks').css('display','');
 			$('#thanks').text("Thanks! We'll be in touch.");

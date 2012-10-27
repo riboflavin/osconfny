@@ -7,6 +7,7 @@ class HomeController < ApplicationController
 		if params[:email] && params[:email].include?('@')  	
 			render :json => {'email' => params[:email], 'response' => 'OK'}
 		    entry = Entry.new
+    		params[:created] =  Time.new.to_time.to_s
     		entry.value = params.to_s
 			entry.save
 		else
@@ -20,7 +21,8 @@ class HomeController < ApplicationController
   		if hash == '3cf6d3ada21adf6a721894f8e011d84494d7bc6f'
   			render :json => {'entries' => entries}
   		else
-  			#render :json => {'data' => hash}
+			redirect_to "/"			
+			#render :json => {'data' => hash}
   		end
   end
 

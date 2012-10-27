@@ -3,6 +3,6 @@ OSConf::Application.routes.draw do
     
   get "/" => "home#index"
   post "/" => "home#post"
-  get "/lkaDCadslkjc28c9dk4JKCD78" => "home#viewall"
+  get "/view/:pass" => "home#view"
 
 end

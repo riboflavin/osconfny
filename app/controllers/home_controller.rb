@@ -14,9 +14,14 @@ class HomeController < ApplicationController
 		end    
   end
 
-  def viewall
+  def view
   		entries = Entry.all
-  		render :json => {'entries' => entries}
+  		hash = Digest::SHA1.hexdigest(params[:pass]) 
+  		if hash == '3cf6d3ada21adf6a721894f8e011d84494d7bc6f'
+  			render :json => {'entries' => entries}
+  		else
+  			#render :json => {'data' => hash}
+  		end
   end
 
 end

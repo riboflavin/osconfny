@@ -13,5 +13,4 @@ gem "haml"
 
 group :development do
   gem "heroku"
-  gem "thin"
 end

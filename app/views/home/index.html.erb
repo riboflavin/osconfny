@@ -4,7 +4,7 @@
 
 <div style="padding: 30px 30px 0px 30px;">
 <h1 style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9;">Open source is powering the NYC tech scene.</h1>
-<h3 style="color:white; padding: 20px 30px 0px 30px; line-height: 30px;">NY Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
+<h3 style="color:white; padding: 20px 30px 0px 30px; line-height: 30px;">NYC Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
 </div>
 
 <div style="padding:30px; font-size: 20px;">
@@ -26,13 +26,23 @@
 
     	<div class="controls">
 		<label class="checkbox">
-        <input type="checkbox" name="talk" id="talk"><b>Give a talk.</b>
+        <input type="checkbox" name="talk" id="talk"><b>Give a talk.</b> <a href="javascript:void();" onclick="$('#moreinfo').slideToggle('fast');">What kinds of talks are you looking for? &raquo;</a>
       	</label>
-    	</div>
+            <div id="moreinfo" style="display: none; width: 700px; font-size: 14px;">
+        	We're looking for talks centered on projects and organizations that are connected with NYC, either in origin or impact, or ideally both. Though we expect many talks to have a technical orientation, one of the objectives of the conference is reaching as diverse an audience as possible. We'd love to hear about:
+            <ul style="margin-top: 6px;">
+                <li>How open source is powering your NYC-based company or nonprofit, especially in finance, media, advertising or culture</li>
+                <li>How you're using open source with a local impact (e.g. building / operating a NYC-based physical goods factory, organizing a NYC-based community group)</li>
+                <li>Discussions of the open source community in NYC, its evolution or impact</li>
+                <li>Discussions of state / local policy touching on open source</li>
+                <li>NYC-based artists discussing how they use open source in projects visible in NYC</li>
+            </ul>
+            </div>
+        </div>
 
 		<div class="controls" id="talkdetails" style="display: none;">
 		<label>Please tell us in a few sentences what your talk will be about.</label>
-    	<textarea rows="3" style="width: 400px;" name="talkdesc"></textarea>
+    	<textarea rows="3" style="width: 700px;" name="talkdesc"></textarea>
     	</div>
 
     	<div class="control-group">

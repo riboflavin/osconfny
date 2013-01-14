@@ -1,7 +1,35 @@
 
-h1 {color: #444 ;font-size:30px;text-shadow:0 0 4px rgba(200, 200, 200, 0.6);}
+h1
+{
+  width: 80%;
+  margin-left: 10%;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
 
-#content-inner { background-color:#505050;color:#fafafa;border:1px solid #111;border-radius:16px; }
+#signup_form
+{
+  background-color: whitesmoke; 
+}
+
+.section
+{
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.sponsorimage
+{
+  height: 40px;
+  margin-right: 30px;
+  display: inline;
+}
 
 .featurebox {
   height: 250px; 
@@ -14,27 +42,6 @@ h1 {color: #444 ;font-size:30px;text-shadow:0 0 4px rgba(200, 200, 200, 0.6);}
   opacity: 1; 
   float: left;
   opacity: .9;
-}
-
-.bottombox {
-  height: 250px; 
-  width: 250px; 
-  margin: 10px; 
-  margin-top: 0px; 
-  padding: 10px; 
-  text-align: center; 
-  background-color: whitesmoke; 
-  opacity: 1; 
-  float: left;
-}
-
-.features
-{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 900px;
-  height: 300px;
 }
 
 .btn-purple {

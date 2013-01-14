@@ -1,6 +1,11 @@
 $(document).ready(function(){
+
 $('#talk').attr('checked',false);
 $('#talk').bind('click',function(){$('#talkdetails').toggle()}); 
+
+$('.action').bind('click',function(){
+	$('#signup_form').modal('toggle');
+});
 
 $('#submit_button').bind('click',function(){
 	$('#submit_button').text("Working...").removeClass('btn-danger').removeClass('btn-primary').removeClass('btn-success');

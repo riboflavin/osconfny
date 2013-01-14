@@ -2,34 +2,35 @@
 	<%= include_stylesheets :all %>
 <% end %>
 
-<div style="padding: 30px 30px 0px 30px;">
-<h1 style="padding: 30px; margin-top: 10px; background-color: whitesmoke; opacity: .9;">Open source is powering the NYC tech scene.</h1>
-<h3 style="color:white; padding: 20px 30px 0px 30px; line-height: 30px;">NYC Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
+<% content_for :js do %>
+    <%= include_javascripts :all %>
+<% end %>
+
+<h1>Open source is powering the NYC tech scene.</h1>
+
+<div class="section">
+<h3 style="line-height: 30px;">NYC Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
+<p>About about about etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc.</p>
+      <button type="submit" class="btn btn-primary action">Attend</button>
+      <button type="submit" class="btn btn-primary action">Speak</button>
+      <button type="submit" class="btn btn-primary action">Sponsor</button>
 </div>
 
-<div style="padding:30px; font-size: 20px;">
-<form class="form-horizontal" style="padding: 20px 30px 0px 30px; background-color: whitesmoke; opacity: .9;" id="signup_form">
- <div class="control-group">
-    <label class="control-label" for="inputPassword">I'd like to...</label>
+<div class="section">
+<h3>Attend</h3>
+<iframe src="http://www.eventbrite.com/tickets-external?eid=5183572204&ref=etckt&v=2" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+</div>
 
-    	<div class="controls">
-		<label class="checkbox">
-        <input type="checkbox" name="attend"><b>Attend.</b> Let me know when registration opens!
-      	</label>
-    	</div>
+<div class="section">
+<h3>Sponsor</h3>
+<p>Sponsor info</p>
+<a href="#" id="sponsor">I'd like to sponsor the event.</a>
+</div>
 
-    	<div class="controls">
-		<label class="checkbox">
-        <input type="checkbox" name="sponsor"><b>Support the NYC open source community</b> by sponsoring the event.
-      	</label>
-    	</div>
-
-    	<div class="controls">
-		<label class="checkbox">
-        <input type="checkbox" name="talk" id="talk"><b>Give a talk.</b> <a href="javascript:void();" onclick="$('#moreinfo').slideToggle('fast');">What kinds of talks are you looking for? &raquo;</a>
-      	</label>
-            <div id="moreinfo" style="display: none; width: 700px; font-size: 14px;">
-        	We're looking for talks centered on projects and organizations that are connected with NYC, either in origin or impact, or ideally both. Though we expect many talks to have a technical orientation, one of the objectives of the conference is reaching as diverse an audience as possible. We'd love to hear about:
+<div class="section">
+<h3>Speak</h3>
+<div>
+            We're looking for talks centered on projects and organizations that are connected with NYC, either in origin or impact, or ideally both. Though we expect many talks to have a technical orientation, one of the objectives of the conference is reaching as diverse an audience as possible. We'd love to hear about:
             <ul style="margin-top: 6px;">
                 <li>How open source is powering your NYC-based company or nonprofit, especially in finance, media, advertising or culture</li>
                 <li>How you're using open source with a local impact (e.g. building / operating a NYC-based physical goods factory, organizing a NYC-based community group)</li>
@@ -37,7 +38,27 @@
                 <li>Discussions of state / local policy touching on open source</li>
                 <li>NYC-based artists discussing how they use open source in projects visible in NYC</li>
             </ul>
-            </div>
+</div>
+<a href="#" id="talk">I'd like to give a talk.</a>
+</div>
+
+<div class="modal hide fade" id="signup_form">
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="signup_form" aria-hidden="true">&times;</button>
+    <h3>Contact</h3>
+</div>
+<div class="modal-body">
+<form class="form-horizontal"> 
+        <div class="controls">
+		<label class="checkbox">
+        <input type="checkbox" name="sponsor">I'd like to <b>support the NYC open source community</b> by sponsoring the event.
+      	</label>
+    	</div>
+
+    	<div class="controls">
+		<label class="checkbox">
+        <input type="checkbox" name="talk" id="talk">I'd like to <b>give a talk.</b>
+      	</label>
         </div>
 
 		<div class="controls" id="talkdetails" style="display: none;">
@@ -45,19 +66,20 @@
     	<textarea rows="3" style="width: 700px;" name="talkdesc"></textarea>
     	</div>
 
-    	<div class="control-group">
-		<div class="form-actions">
+	   <div class="form-actions">
 		  <input type="text" placeholder="Email address" id="email_address" name="email">  
 		  <button type="submit" class="btn btn-primary" id="submit_button" onclick="return false;">Submit</button>
 		  <label style="margin-top:4px; display: none;" id="thanks"></label>
-		</div>
-		</div>
+	   </div>
 </form>
-
-<!--<p style="font-size: 12px; padding: 30px; background-color: whitesmoke; ">Supporter logos go here...</p>-->
+</div>
 </div>
 
-<p style="margin-top: 140px; font-size: 12px; text-decoration: none; color: whitesmoke;"><a style="text-decoration: none; color: whitesmoke;" target="_blank" href="http://www.flickr.com/photos/58708751@N00/2115981739/sizes/o/in/photostream/">Photo: flickr user pchurch92</a></p>
-<% content_for :js do %>
-	<%= include_javascripts :all %>
-<% end %>
+<div class="section">
+    <p>Sponsors</p>
+    <img class="sponsorimage" src="http://www.opentechnyc.com/sites/default/files/images/10gen_logo.png">
+    <img class="sponsorimage" src="http://www.opentechnyc.com//sites/default/files/images/kaltura_logo.png">
+    <img class="sponsorimage" src="http://www.opentechnyc.com//sites/default/files/images/c4q_logo.png">
+</div>
+  
+<p><a style="font-size: 12px; text-decoration: none; color: whitesmoke;" target="_blank" href="http://www.flickr.com/photos/58708751@N00/2115981739/sizes/o/in/photostream/">Photo: flickr user pchurch92</a></p>

@@ -12,9 +12,11 @@ h1
 #signup_form
 {
   background-color: whitesmoke; 
+  top: 400px;
 }
 
-.section
+.section,
+#main
 {
   width: 80%;
   float: left;
@@ -22,6 +24,7 @@ h1
   background-color: whitesmoke;
   padding: 20px;
   margin-bottom: 50px;
+  border-radius: 6px;
 }
 
 .sponsorimage

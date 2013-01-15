@@ -8,26 +8,26 @@
 
 <h1>Open source is powering the NYC tech scene.</h1>
 
-<div class="section">
-<h3 style="line-height: 30px;">NYC Open Tech Conference<br/>Spring 2013<br/>Queens, New York</h3>
+<div id="main">
+<h3 style="line-height: 30px;">NYC Open Tech Conference<br/>March 30, 2013<br/>Queens, New York<br/></h3>
 <p>About about about etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc.</p>
-      <button type="submit" class="btn btn-primary action">Attend</button>
-      <button type="submit" class="btn btn-primary action">Speak</button>
-      <button type="submit" class="btn btn-primary action">Sponsor</button>
+      <button type="submit" class="btn btn-primary action" id="attend">Attend</button>
+      <button type="submit" class="btn btn-primary action" id="speak">Speak</button>
+      <button type="submit" class="btn btn-primary action" id="sponsor">Sponsor</button>
 </div>
 
-<div class="section">
+<div class="section" id="attend_s">
 <h3>Attend</h3>
 <iframe src="http://www.eventbrite.com/tickets-external?eid=5183572204&ref=etckt&v=2" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 </div>
 
-<div class="section">
+<div class="section" id="sponsor_s">
 <h3>Sponsor</h3>
 <p>Sponsor info</p>
-<a href="#" id="sponsor">I'd like to sponsor the event.</a>
+<a href="#" class="formaction">I'd like to sponsor the event.</a>
 </div>
 
-<div class="section">
+<div class="section" id="speak_s">
 <h3>Speak</h3>
 <div>
             We're looking for talks centered on projects and organizations that are connected with NYC, either in origin or impact, or ideally both. Though we expect many talks to have a technical orientation, one of the objectives of the conference is reaching as diverse an audience as possible. We'd love to hear about:
@@ -39,16 +39,16 @@
                 <li>NYC-based artists discussing how they use open source in projects visible in NYC</li>
             </ul>
 </div>
-<a href="#" id="talk">I'd like to give a talk.</a>
+<a href="#" class="formaction">I'd like to give a talk!</a>
 </div>
 
 <div class="modal hide fade" id="signup_form">
 <div class="modal-header">
-    <button type="button" class="close" data-dismiss="signup_form" aria-hidden="true">&times;</button>
+    <button type="button" class="close" data-dismiss="signup_form" id="modal_close">&times;</button>
     <h3>Contact</h3>
 </div>
 <div class="modal-body">
-<form class="form-horizontal"> 
+<form class="form-horizontal"id="signup_form_data"> 
         <div>
 		<label class="checkbox">
         <input type="checkbox" name="sponsor">I'd like to <b>support the NYC open source community</b> by sponsoring the event.
@@ -61,12 +61,12 @@
       	</label>
         </div>
 
-		<div class="controls" id="talkdetails" style="display: none;">
+		<div id="talkdetails" style="display: none;">
 		<label>Please tell us in a few sentences what your talk will be about.</label>
-    	<textarea rows="3" style="width: 700px;" name="talkdesc"></textarea>
+    	<textarea rows="3" style="width: 480px;" name="talkdesc"></textarea>
     	</div>
 
-	   <div class="form-actions">
+	   <div class="form-actions" style="padding-left: 0px;">
 		  <input type="text" placeholder="Email address" id="email_address" name="email">  
 		  <button type="submit" class="btn btn-primary" id="submit_button" onclick="return false;">Submit</button>
 		  <label style="margin-top:4px; display: none;" id="thanks"></label>

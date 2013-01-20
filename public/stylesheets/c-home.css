@@ -1,12 +1,39 @@
+body
+{
+  background: url('/images/nynight.jpg');
+  background-size: 100%;
+  color: whitesmoke;
+  font-family: 'Rokkitt';
+}
 
 h1
 {
-  width: 80%;
-  margin-left: 10%;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: whitesmoke;
+  text-shadow: 
+  0 0 40px orange, 
+  0 0 70px orangered;
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+h3
+{
+  line-height: 26px;
+  font-size: 30px;
+}
+
+p, ul, li, #brand
+{
+  font-size: 24px;
+  font-family: 'Rokkitt';
+  line-height: 23px;
+}
+
+#talkbutton
+{
+  float: left;
+  clear: right;
 }
 
 #signup_form
@@ -15,16 +42,34 @@ h1
   top: 400px;
 }
 
-.section,
-#main
+#gmap
 {
-  width: 80%;
-  float: left;
-  margin-left: 10%;
-  background-color: whitesmoke;
-  padding: 20px;
-  margin-bottom: 50px;
-  border-radius: 6px;
+  float: right;
+  margin-left: 20px;
+}
+
+#brand
+{
+  cursor: pointer;
+  padding: 10px 15px 10px;
+}
+
+.anchor a
+{
+  width: 100%;
+  padding-bottom: 50px;
+  display: block;
+}
+
+.navbar .brand
+{
+  margin-left: 53px;
+}
+
+.section
+{
+  height: 650px;
+  padding: 70px;
 }
 
 .sponsorimage
@@ -34,32 +79,23 @@ h1
   display: inline;
 }
 
-.featurebox {
-  height: 250px; 
-  width: 250px; 
-  margin: 10px; 
-  margin-top: 0px; 
-  padding: 10px; 
-  text-align: center; 
-  background-color: whitesmoke; 
-  opacity: 1; 
-  float: left;
-  opacity: .9;
+.modal
+{
+  color: gray;
 }
 
-.btn-purple {
-  border: none;
-  background-repeat: repeat-x;
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", #900aff, #540099));
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#900aff), to(#540099));
-  background-image: -moz-linear-gradient(top, #900aff, #540099);
-  background-image: -ms-linear-gradient(top, #900aff, #540099);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #900aff), color-stop(100%, #540099));
-  background-image: -webkit-linear-gradient(top, #900aff, #540099);
-  background-image: -o-linear-gradient(top, #900aff, #540099);
-  background-image: linear-gradient(#900aff, #540099);
-  background-color: #540099 !important;
-  color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.36);
-  -webkit-font-smoothing: antialiased;
+#modal-backdrop {
+  display: none; 
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  z-index: 25; 
+  background-color: gray; 
+  opacity: .5; 
+  height: 100%; 
+  width: 100%;
+}
+
+#OSConf-navbar-logo {
+  margin-top: 3px;
 }

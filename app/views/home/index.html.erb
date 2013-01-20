@@ -6,40 +6,61 @@
     <%= include_javascripts :all %>
 <% end %>
 
-<h1>Open source is powering the NYC tech scene.</h1>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <a class="brand" id="brand">Open Tech NYC</a>
+    <ul class="nav" id="navbar">
+      <li><a href="#about_a" id="about">About</a></li>
+      <!-- <li><a href="#attend_a" id="attend">Attend</a></li> -->
+      <!-- <li><a href="#speakers_a" id="speakers">Speakers</a></li> -->
+      <li><a href="#speak_a" id="speak">Call for Talks</a></li>
+    </ul>
+  </div>
+</div>
 
-<div id="main">
-<h3 style="line-height: 30px;">NYC Open Tech Conference<br/>March 30, 2013<br/>Queens, New York<br/></h3>
-<p>About about about etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc.</p>
-      <button type="submit" class="btn btn-primary action" id="attend">Attend</button>
-      <button type="submit" class="btn btn-primary action" id="speak">Speak</button>
-      <button type="submit" class="btn btn-primary action" id="sponsor">Sponsor</button>
+<div class="section" id="about_s">
+<h1>Open source is powering the NYC tech scene.</h1>
+<h3>NYC Open Tech Conference<br/>March 30, 2013<br/>Queens, New York<br/></h3>
+<p>Join us as we celebrate innovation in technology from at New York City’s first open source conference. NYC Open Source Conference will bring together members of the community across a variety of disciplines to learn and exchange ideas.</p>
+
+<iframe id="evntb" src="http://www.eventbrite.com/tickets-external?eid=5183572204&ref=etckt&v=2" frameborder="0" height="350" width="55%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true" style="margin-top: 6px;"></iframe>
+<iframe id="gmap" width="40%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=47-40+21st+Street,+Queens,+NY&amp;aq=0&amp;oq=47-40+21st+&amp;sll=40.743746,-73.948996&amp;sspn=0.010307,0.019269&amp;ie=UTF8&amp;hq=&amp;hnear=47-40+21st+St,+Queens,+New+York+11101&amp;t=m&amp;ll=40.74355,-73.949747&amp;spn=0.02276,0.036478&amp;z=14&amp;output=embed&amp;iwloc=false"></iframe>
 </div>
 
 <div class="section" id="attend_s">
 <h3>Attend</h3>
-<iframe src="http://www.eventbrite.com/tickets-external?eid=5183572204&ref=etckt&v=2" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 </div>
 
-<div class="section" id="sponsor_s">
-<h3>Sponsor</h3>
-<p>Sponsor info</p>
-<a href="#" class="formaction">I'd like to sponsor the event.</a>
+<div class="section" id="speakers_s">
+<h3>Speakers</h3>
+<p>Speakers</p>
 </div>
 
 <div class="section" id="speak_s">
-<h3>Speak</h3>
+<h3>Call for Talks</h3>
 <div>
+    <p>
             We're looking for talks centered on projects and organizations that are connected with NYC, either in origin or impact, or ideally both. Though we expect many talks to have a technical orientation, one of the objectives of the conference is reaching as diverse an audience as possible. We'd love to hear about:
-            <ul style="margin-top: 6px;">
+            <ul style="margin-top: 6px; margin-bottom: 20px;">
                 <li>How open source is powering your NYC-based company or nonprofit, especially in finance, media, advertising or culture</li>
                 <li>How you're using open source with a local impact (e.g. building / operating a NYC-based physical goods factory, organizing a NYC-based community group)</li>
                 <li>Discussions of the open source community in NYC, its evolution or impact</li>
                 <li>Discussions of state / local policy touching on open source</li>
                 <li>NYC-based artists discussing how they use open source in projects visible in NYC</li>
             </ul>
+    </p>
 </div>
-<a href="#" class="formaction">I'd like to give a talk!</a>
+<!-- <a href="#" class="formaction" id="talkbutton">I'd like to give a talk!</a><br/><br/> -->
+<iframe id="talksubmit" src="https://docs.google.com/a/10gen.com/spreadsheet/embeddedform?formkey=dFVnSTRnOFNrWGVzVXZKQ2ZQMVdHanc6MQ" width="80%" height="440" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+
+<div class="section" id="sponsor_s" style="height:100px;">
+<p class="anchor"><a name="sponsor_a" id="sponsor_a"></a></p>
+    <h3>Sponsors</h3>
+    <img class="sponsorimage" src="http://www.opentechnyc.com/sites/default/files/images/10gen_logo.png">
+    <img class="sponsorimage" src="http://www.opentechnyc.com/sites/default/files/images/kaltura_logo.png">
+    <img class="sponsorimage" src="http://www.opentechnyc.com/sites/default/files/images/c4q_logo.png">
+    <a href="#" class="formaction">Interested in sponsoring?</a>
 </div>
 
 <div class="modal hide fade" id="signup_form">
@@ -74,12 +95,5 @@
 </form>
 </div>
 </div>
-
-<div class="section">
-    <p>Sponsors</p>
-    <img class="sponsorimage" src="http://www.opentechnyc.com/sites/default/files/images/10gen_logo.png">
-    <img class="sponsorimage" src="http://www.opentechnyc.com//sites/default/files/images/kaltura_logo.png">
-    <img class="sponsorimage" src="http://www.opentechnyc.com//sites/default/files/images/c4q_logo.png">
-</div>
   
-<p><a style="font-size: 12px; text-decoration: none; color: whitesmoke;" target="_blank" href="http://www.flickr.com/photos/58708751@N00/2115981739/sizes/o/in/photostream/">Photo: flickr user pchurch92</a></p>
+<a style="font-size: 12px; text-decoration: none; color: whitesmoke;" target="_blank" href="http://www.flickr.com/photos/joiseyshowaa/4044792129/">Photo: flickr user joiseyshowaa</a>

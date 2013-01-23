@@ -78,6 +78,7 @@ p, ul, li, #brand
   font-size: 23px;
   position: absolute;
   left: 70px;
+  z-index: -1;
 }
 
 #bottom a

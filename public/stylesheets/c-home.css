@@ -72,28 +72,16 @@ p, ul, li, #brand
   padding: 70px;
 }
 
-.sponsorimage
+#bottom
 {
-  height: 40px;
-  margin-right: 30px;
-  display: inline;
+  height: 100px;
+  padding: 70px;
+  font-size: 23px;
 }
 
-.modal
+#bottom a
 {
-  color: gray;
-}
-
-#modal-backdrop {
-  display: none; 
-  position: absolute; 
-  top: 0px; 
-  left: 0px; 
-  z-index: 25; 
-  background-color: gray; 
-  opacity: .5; 
-  height: 100%; 
-  width: 100%;
+  margin-right: 12px;
 }
 
 #OSConf-navbar-logo {

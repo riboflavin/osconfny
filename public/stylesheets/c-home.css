@@ -75,8 +75,9 @@ p, ul, li, #brand
 #bottom
 {
   height: 100px;
-  padding: 70px;
   font-size: 23px;
+  position: absolute;
+  left: 70px;
 }
 
 #bottom a

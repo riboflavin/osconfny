@@ -1,16 +1,16 @@
 var fxopts = {'effect':'slide','duration':'300'};
 
 $(document).ready(function(){
-
-$('.section').css('display','none');
-$('#about_s').css('display','');
-
+//bind brand click
 $('.brand').bind('click',function(){
-	$('#about').click();
+	$('#about_c').click();
+		window.location.hash = '#about';
 });
 
-$('#navbar li a').bind('click',function(){
-	var show_section = '#' + $(this).attr('id') + '_s';
+//bind other navbar item clicks and fsp link
+$('#navbar li a').add('#fsp_c').bind('click',function(){
+	var show_section = '#' + $(this).attr('id').replace('_c','') + '_s';
+		window.location.hash = '#' + $(this).attr('id').replace('_c','');
 	var $show_section = $(show_section);
 	var $visible = $('.section:visible');
 	if (typeof($visible.get(0)) === 'undefined')  
@@ -29,11 +29,15 @@ $('#navbar li a').bind('click',function(){
 	//regardless of whether it is showing alongside other things (since that should never happen)
 });
 
-$('#fsp').bind('click',function(){
-	$('.section:visible').hide('slide',function(){
-		$('#fsp_s').show(fxopts);
-	});
-});
-
+//populate tumblr
 $('#blog_s').tumblr({hostname: 'opentechnyc.tumblr.com'});
+
+//hide all sections
+$('.section').css('display','none');
+
+//go to section corresponding with hash
+if (window.location.hash != '')
+{$(window.location.hash + '_c').click();}
+else 
+{$('#about_s').css('display','');}
 });

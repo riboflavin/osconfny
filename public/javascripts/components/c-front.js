@@ -35,5 +35,5 @@ $('#fsp').bind('click',function(){
 	});
 });
 
-
+$('#blog_s').tumblr({hostname: 'opentechnyc.tumblr.com'});
 });

@@ -3,15 +3,13 @@ compress_assets: off
 
 javascripts:
     all:
-        - public/javascripts/vendor/jquery.min.js
-        - public/javascripts/vendor/jquery-ui.min.js
+        - public/javascripts/vendor/jquery-1.9.0.js
+        - public/javascripts/vendor/jquery-ui-1.10.0.custom.min.js
         - public/javascripts/vendor/bootstrap.js
+        - public/javascripts/vendor/jquery-tumblr.js
         - public/javascripts/components/c-front.js
 
 stylesheets:
     all:
         - public/stylesheets/vendor/bootstrap.min.css
-        - public/stylesheets/vendor/jquery-ui.css
-        - public/stylesheets/c-core.css
-        - public/stylesheets/c-typography.css
         - public/stylesheets/c-home.css

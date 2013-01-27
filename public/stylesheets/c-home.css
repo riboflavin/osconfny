@@ -1,9 +1,38 @@
 body
 {
-  background: url('/images/nynight.jpg');
   background-size: 100%;
+  background-repeat: no-repeat;
   color: whitesmoke;
   font-family: 'Rokkitt';
+  /*position: relative;*/
+  background-color: rgb(247,247,247);
+  background-image: url('/images/smap.jpg');
+}
+
+#image_b
+{
+/*  background: url('/images/subw3c.jpeg');  
+  position: absolute;
+  width: 282px;
+  height: 1017px;
+  top: 98px;
+  background-size: 100%;
+  z-index: -9999;
+  right: 0px;
+*/}
+
+.post_list
+{
+}
+
+#brand span.smaller
+{
+font-size: 16px;
+font-weight: normal;
+text-shadow: none;
+margin-left: 12px;
+color: gray;
+text-shadow: 0 1px 0 white;
 }
 
 h1
@@ -23,11 +52,36 @@ h3
   font-size: 30px;
 }
 
-p, ul, li, #brand
+.postdate p
 {
-  font-size: 24px;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+p, ul, li, a, #brand
+{
+  font-size: 22px;
   font-family: 'Rokkitt';
-  line-height: 23px;
+  line-height: 21px;
+  color: whitesmoke;
+}
+
+#brand, #navbar
+{
+  margin-left: 125px;
+  float: left;
+  clear: both;
+}
+
+#navbar li a
+{
+  font-size: 28px;
+  color: gray;
+}
+
+#about 
+{
+  margin-left: 2px;
 }
 
 #talkbutton
@@ -52,6 +106,14 @@ p, ul, li, #brand
 {
   cursor: pointer;
   padding: 10px 15px 10px;
+  margin-top: 12px;
+  margin-bottom: 2px;
+  font-size: 32px;    
+  text-shadow: 
+  0 0 10px orange, 
+  0 0 40px orangered;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 .anchor a
@@ -61,31 +123,56 @@ p, ul, li, #brand
   display: block;
 }
 
-.navbar .brand
-{
-  margin-left: 53px;
-}
-
 .section
 {
-  height: 650px;
+  margin: 80px;
   padding: 70px;
+  background-color: gray;
+  margin-top: 150px;
+  box-shadow: 0 2px 16px rgba(0, 1, 1, 1)
 }
 
 #bottom
 {
-  height: 100px;
   font-size: 23px;
-  position: absolute;
-  left: 70px;
-  z-index: -1;
+  margin: 80px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: gray;
+  box-shadow: 0 2px 16px rgba(0, 1, 1, 1);
+  color: whitesmoke;
 }
 
 #bottom a
 {
   margin-right: 12px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
 }
 
 #OSConf-navbar-logo {
   margin-top: 3px;
 }
+
+/*bootstrap overrides*/
+.navbar-inner
+{
+  min-height: 99px;
+  /*background: #012;*/
+  /*background-image: -moz-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
+  /*background-image: -o-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
+  /*background-image: -webkit-linear-gradient(top, orange, pink);*/
+  /*background-image: linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
+  border-bottom: none;
+  opacity: 1;
+  background-image: url('/images/batthern.png');
+  background-repeat: repeat;
+}
+
+/*  background-image: -moz-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
+  background-image: -o-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
+  background-image: -webkit-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
+  background-image: linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
+*/

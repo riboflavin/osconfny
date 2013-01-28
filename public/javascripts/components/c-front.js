@@ -1,5 +1,8 @@
 var fxopts = {'effect':'slide','duration':'300'};
 
+if (window.location.href == 'http://osconfny.herokuapp.com')
+{window.location.href = "http://opentech2013.org";}
+
 $(document).ready(function(){
 //bind brand click
 $('.brand').bind('click',function(){

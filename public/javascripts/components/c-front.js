@@ -10,6 +10,11 @@ $('.brand').bind('click',function(){
 		window.location.hash = '#about';
 });
 
+$('#youlink').bind('click',function(){
+	$('#speak_c').click();
+		window.location.hash = '#speak';
+});
+
 //bind other navbar item clicks and fsp link
 $('#navbar li a').add('#fsp_c').bind('click',function(){
 	var show_section = '#' + $(this).attr('id').replace('_c','') + '_s';

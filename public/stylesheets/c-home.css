@@ -3,23 +3,10 @@ body
   background-size: 100%;
   background-repeat: no-repeat;
   color: whitesmoke;
-  font-family: 'Rokkitt';
-  /*position: relative;*/
+  font-family: 'Rokkitt', sans-serif;
   background-color: rgb(247,247,247);
   background-image: url('/images/subway_ln.jpg');
 }
-
-#image_b
-{
-/*  background: url('/images/subw3c.jpeg');  
-  position: absolute;
-  width: 282px;
-  height: 1017px;
-  top: 98px;
-  background-size: 100%;
-  z-index: -9999;
-  right: 0px;
-*/}
 
 .post_list
 {
@@ -41,15 +28,52 @@ h1
   text-shadow: 
   0 0 40px orange, 
   0 0 70px orangered;
-  font-size: 48px;
-  letter-spacing: 1px;
-  margin-bottom: 32px;
+  font-size: 44px;
+  margin-bottom: 2px;
+}
+
+h2
+{
+  line-height: 26px;
+  font-size: 30px;
 }
 
 h3
 {
-  line-height: 26px;
-  font-size: 30px;
+  line-height: 24px;
+  font-size: 24px;
+  padding-top: 28px;
+}
+
+#speakers_s h3
+{
+  border-bottom: 1px solid whitesmoke;
+}
+
+h4
+{
+  line-height: 16px;
+  font-size: 16px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+p, ul, li, a
+{
+  font-size: 18px;
+  line-height: 22px;
+  color: whitesmoke;
+}
+
+.talkintro 
+{
+  font-weight: bold;
+}
+
+.bio, .bio a
+{
+  /*font-style: italic;*/
+  margin-bottom: 38px;
 }
 
 .postdate p
@@ -58,30 +82,42 @@ h3
   margin-top: -10px;
 }
 
-p, ul, li, a, #brand
-{
-  font-size: 22px;
-  font-family: 'Rokkitt';
-  line-height: 21px;
-  color: whitesmoke;
-}
-
-#brand, #navbar
+#navbar
 {
   margin-left: 125px;
   float: left;
   clear: both;
 }
 
-#navbar li a
+#navbar a
 {
-  font-size: 28px;
+  padding-top: 0px;
+  font-size: 22px;
+  line-height: 20px;
   color: gray;
 }
 
-#about 
+#brand
 {
-  margin-left: 2px;
+  margin-left: 125px;
+  float: left;
+  clear: both;
+  color: gray;
+  cursor: pointer;
+  padding: 10px 15px 10px;
+  margin-top: 14px;
+  margin-bottom: 0px;
+  font-size: 36px;    
+  font-weight: bold;
+  text-shadow: 
+  0 0 10px orange, 
+  0 0 40px orangered;
+  color: whitesmoke;
+}
+
+#about_c 
+{
+  margin-left: 3px;
 }
 
 #talkbutton
@@ -100,20 +136,6 @@ p, ul, li, a, #brand
 {
   float: right;
   margin-left: 20px;
-}
-
-#brand
-{
-  cursor: pointer;
-  padding: 10px 15px 10px;
-  margin-top: 12px;
-  margin-bottom: 2px;
-  font-size: 32px;    
-  text-shadow: 
-  0 0 10px orange, 
-  0 0 40px orangered;
-  color: whitesmoke;
-  font-weight: bold;
 }
 
 .anchor a
@@ -156,23 +178,15 @@ p, ul, li, a, #brand
   margin-top: 3px;
 }
 
-/*bootstrap overrides*/
+#youlink {
+  cursor: pointer;
+}
+
 .navbar-inner
 {
   min-height: 99px;
-  /*background: #012;*/
-  /*background-image: -moz-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
-  /*background-image: -o-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
-  /*background-image: -webkit-linear-gradient(top, orange, pink);*/
-  /*background-image: linear-gradient(top, rgb(15,30,45), rgb(90,83,83));*/
   border-bottom: none;
   opacity: 1;
   background-image: url('/images/batthern.png');
   background-repeat: repeat;
 }
-
-/*  background-image: -moz-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
-  background-image: -o-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
-  background-image: -webkit-linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
-  background-image: linear-gradient(top, rgb(15,30,45), rgb(90,83,83));
-*/

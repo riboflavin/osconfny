@@ -22,6 +22,22 @@ color: gray;
 text-shadow: 0 1px 0 white;
 }
 
+.biotitle
+{
+  font-style: italic;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  margin-top: -2px;
+}
+
+.bioname
+{
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 h1
 {
   color: whitesmoke;
@@ -50,6 +66,19 @@ h3
   border-bottom: 1px solid whitesmoke;
 }
 
+#sponsor_s ul li
+{
+  list-style-image: none;
+  list-style: none;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+#sponsor_s ul
+{
+  margin-left: 0px;
+}
+
 h4, h4 a
 {
   line-height: 16px;
@@ -58,22 +87,40 @@ h4, h4 a
   margin-bottom: 20px;
 }
 
-p, ul, li, a
+p, ul, li, a, td
 {
   font-size: 20px;
   line-height: 22px;
   color: whitesmoke;
 }
 
+td
+{
+  border-bottom: 1px solid white;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+td.time
+{
+  font-weight: bold;
+  width: 30%;
+}
+
+#agenda_s a
+{
+  text-decoration: underline;
+}
+
 .talkintro 
 {
   font-weight: bold;
-  font-style: italic;
 }
 
 .bio, .bio a
 {
-  /*font-style: italic;*/
   margin-bottom: 38px;
 }
 
@@ -111,9 +158,15 @@ p, ul, li, a
   font-size: 36px;    
   font-weight: bold;
   text-shadow: 
-  0 0 10px orange, 
-  0 0 40px orangered;
+  0 0 6px orange, 
+  0 0 26px orangered;
   color: whitesmoke;
+}
+
+.sponsor
+{
+  height: 70px;
+  margin-bottom: 16px;
 }
 
 #about_c 

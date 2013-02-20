@@ -10,10 +10,18 @@ $('.brand').bind('click',function(){
 		window.location.hash = '#about';
 });
 
-$('#youlink').bind('click',function(){
+//bind call for talks
+$('.youlink').bind('click',function(){
 	$('#speak_c').click();
 		window.location.hash = '#speak';
 });
+
+//bind bio links
+$('.bioname').bind('click',function(){
+	$('#speakers_c').click();
+		window.location.hash = '#speakers';
+});
+
 
 //bind other navbar item clicks and fsp link
 $('#navbar li a').add('#fsp_c').bind('click',function(){

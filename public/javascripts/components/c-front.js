@@ -4,10 +4,18 @@ if (window.location.href == 'http://osconfny.herokuapp.com')
 {window.location.href = "http://opentech2013.org";}
 
 $(document).ready(function(){
+//sharenav
+$('#sharenav').css('display','none').css('top','50px');
+window.setTimeout(function(){
+$('#sharenav').css('display','');
+$('#sharenav').animate({
+    top: '95px'},1000);
+},10000);
+
 //bind brand click
 $('.brand').bind('click',function(){
-	$('#about_c').click();
-		window.location.hash = '#about';
+	$('#main_c').click();
+		window.location.hash = '#main';
 });
 
 //bind call for talks
@@ -52,8 +60,8 @@ $('#blog_s').tumblr({hostname: 'opentechnyc.tumblr.com'});
 $('.section').css('display','none');
 
 //go to section corresponding with hash
-if (window.location.hash != '')
+if (window.location.hash != '' && ($(window.location.hash + '_c').length > 0))
 {$(window.location.hash + '_c').click();}
 else 
-{$('#about_s').css('display','');}
+{$('#main_s').css('display','');}
 });

@@ -44,7 +44,7 @@ h1
   text-shadow: 
   0 0 40px orange, 
   0 0 70px orangered;
-  font-size: 44px;
+  font-size: 40px;
   margin-bottom: 2px;
 }
 
@@ -137,12 +137,46 @@ td.time
   clear: both;
 }
 
+#sharenav
+{
+  position: absolute;
+  top: 95px;
+  background-color: purple;
+  padding-top: 10px;
+}
+
 #navbar a
 {
-  padding-top: 0px;
+  padding-top: 2px;
   font-size: 22px;
   line-height: 20px;
-  color: gray;
+  margin-left: 3px;
+}
+
+#sharenav li
+{
+  list-style-image: none;
+  list-style: none;
+  margin-bottom: 5px;
+  display: inline; 
+}
+
+#sharenav ul
+{
+  margin-left: 125px;
+  padding-bottom: 0px;
+  margin-bottom: 7px;
+}
+
+#sharenav
+{
+width: 100%;
+}
+
+.sharetext
+{
+  margin-right: 10px;
+  margin-left: 19px;
 }
 
 #brand
@@ -158,20 +192,24 @@ td.time
   font-size: 36px;    
   font-weight: bold;
   text-shadow: 
-  0 0 6px orange, 
-  0 0 26px orangered;
+  0 0 2px orange, 
+  0 0 12px orangered;
   color: whitesmoke;
+}
+
+#main_c
+{
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 
+  0 0 6px purple, 
+  0 0 26px purple;
 }
 
 .sponsor
 {
   height: 70px;
   margin-bottom: 16px;
-}
-
-#about_c 
-{
-  margin-left: 3px;
 }
 
 #talkbutton
@@ -203,7 +241,7 @@ td.time
 {
   margin: 80px;
   padding: 70px;
-  background-color: gray;
+  background-color: #999D99;
   margin-top: 150px;
   box-shadow: 0 2px 16px rgba(0, 1, 1, 1)
 }

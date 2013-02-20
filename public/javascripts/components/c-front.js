@@ -10,7 +10,7 @@ window.setTimeout(function(){
 $('#sharenav').css('display','');
 $('#sharenav').animate({
     top: '95px'},1000);
-},10000);
+},5000);
 
 //bind brand click
 $('.brand').bind('click',function(){

@@ -143,6 +143,7 @@ td.time
   top: 95px;
   background-color: purple;
   padding-top: 10px;
+  position: fixed;
 }
 
 #navbar a

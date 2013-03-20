@@ -5,7 +5,7 @@ body
   color: whitesmoke;
   font-family: 'Rokkitt', sans-serif;
   background-color: black;
-  background-image: url('/images/subway_ln.jpg');
+  background-image: url('http://www.opentech2013.org/images/subway_ln.jpg');
 }
 
 .post_list
@@ -280,6 +280,6 @@ width: 100%;
   min-height: 99px;
   border-bottom: none;
   opacity: 1;
-  background-image: url('/images/batthern.png');
+  background-image: url('http://www.opentech2013.org/images/batthern.png');
   background-repeat: repeat;
 }

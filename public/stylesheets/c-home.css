@@ -1,285 +1,219 @@
-body
-{
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: whitesmoke;
-  font-family: 'Rokkitt', sans-serif;
-  background-color: black;
-  background-image: url('http://www.opentech2013.org/images/subway_ln.jpg');
-}
+/**
+ * OPEN TECH 2012 STYLESHEET
+ * Meghan Gill, Coalition for Queens
+ * Authors: @jdunham, @ggundersen
+ **/
 
-.post_list
-{
+/* Structure
+ ========================================================*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  background-image: url('http://www.opentech2013.org/images/scloth_alike.png');
+  color: #000;
 }
-
-#brand span.smaller
-{
-font-size: 16px;
-font-weight: normal;
-text-shadow: none;
-margin-left: 12px;
-color: gray;
-text-shadow: 0 1px 0 white;
+.section,
+#bottom,
+#main_s,
+#navbar {
+  width: 700px;
+  padding-left: 70px;
+  padding-right: 70px;
+  -webkit-box-shadow: 3px 3px 8px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    3px 3px 8px rgba(50, 50, 50, 0.5);
+  box-shadow:         3px 3px 8px rgba(50, 50, 50, 0.5);
 }
-
-.biotitle
+#navbar {
+  background: #000;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.section {
+  background-color: #fff;
+  margin: auto;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+#bottom {
+  background: #000;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+/* Elements
+ ========================================================*/
+ul.nav,
+ul.sharenav {
+  list-style: none;
+  padding: 0;
+  /*margin: 0;*/
+  margin-top: 25px;
+}
+ul.sharenav {
+    padding-top: 20px;
+}
+ul.nav li,
+ul.sharenav li {
+  display: inline;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+h4,
+h4 a {
+  font-size: 14px;
+  margin: 0;
+}
+a {
+  color: #b933ad;
+  text-decoration: none;
+  border-bottom: 1px dotted #b933ad;
+}
+a:hover {
+  color: #00b0ff;
+  border-color: #00b0ff;
+}
+#navbar a {
+    border: none;
+}
+#navbar a#logo {
+  font-size: 30px;
+  padding-top: 2px;
+}
+#navbar a#logo:hover {
+  color: #00b0ff;
+}
+p, a, ul, li, td {
+  font-size: 14px;
+}
+td {
+  padding-top: 16px;
+  padding-bottom: 6px;
+  font-weight: normal;
+  vertical-align: top;
+}
+td.time {
+  font-weight: bold;
+  width: 30%;
+}
+td p
 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#main_s a {
+    text-decoration: none !important; /* overwriting Eventbrite */
+}
+#bottom a {
+    border: none;
+}
+.anchor a {
+  width: 100%;
+  padding-bottom: 50px;
+  display: block;
+}
+#bottom a {
+  margin-right: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+ /* Navbar
+  ========================================================*/
+#navbar #logo {
+  color: #fff;
+  cursor: pointer;
+  font-size: 36px;    
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#navbar #navbar-date {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  /*margin-left: 12px;
+    padding-left: 20px;*/
+}
+#navbar #logo img{
+  float: right;
+}
+/* Sponsors
+ ========================================================*/
+#sponsor_s ul {
+  padding: 0;
+}
+#sponsor_s li a {
+  text-decoration: none;
+  border-bottom: none;
+}
+#sponsor_s li {
+  padding: 10px 0;
+}
+#sponsor_s li:first-child {
+  padding-top: 50px; 
+}
+#sponsor_s ul li {
+  list-style: none;
+  list-style-image: none;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+.sponsor {
+  height: 70px;
+  margin-bottom: 16px;
+}
+/* Bio
+ ========================================================*/
+.biotitle {
   font-style: italic;
   display: block;
   margin-bottom: 6px;
   font-size: 16px;
   margin-top: -2px;
 }
-
-.bioname
-{
+.bioname {
   display: block;
   font-weight: bold;
   cursor: pointer;
 }
-
-h1
-{
-  color: whitesmoke;
-  text-shadow: 
-  0 0 40px orange, 
-  0 0 70px orangered;
-  font-size: 40px;
-  margin-bottom: 14px;
-}
-
-h2
-{
-  line-height: 26px;
-  font-size: 30px;
-}
-
-h3
-{
-  line-height: 24px;
-  font-size: 24px;
-  padding-top: 28px;
-}
-
-#speakers_s h3
-{
-  border-bottom: 1px solid whitesmoke;
-}
-
-#sponsor_s ul li
-{
-  list-style-image: none;
-  list-style: none;
-  margin-left: 0px;
-  margin-bottom: 10px;
-}
-
-#sponsor_s ul
-{
-  margin-left: 0px;
-}
-
-h4, h4 a
-{
-  line-height: 16px;
-  font-size: 16px;
-  margin-top: -4px;
-  margin-bottom: 20px;
-}
-
-p, ul, li, a, td
-{
-  font-size: 20px;
-  line-height: 22px;
-  color: whitesmoke;
-}
-
-td
-{
-  border-bottom: 1px solid white;
-  padding-top: 16px;
-  padding-bottom: 6px;
-  font-weight: normal;
-  vertical-align: top;
-}
-
-td.time
-{
-  font-weight: bold;
-  width: 30%;
-}
-
-#agenda_s a
-{
-  text-decoration: underline;
-}
-
-.talkintro 
-{
+.talkintro {
   font-weight: bold;
 }
-
-.bio, .bio a
-{
+.bio,
+.bio a {
   margin-bottom: 38px;
 }
-
-.postdate p
-{
+.postdate p {
   font-size: 16px;
   margin-top: -10px;
 }
-
-#navbar
-{
-  margin-left: 125px;
-  float: left;
-  clear: both;
+#navbar li {
+    padding-right: 10px;
 }
-
-#sharenav
-{
-  position: absolute;
-  top: 95px;
-  background-color: purple;
-  padding-top: 10px;
-  position: fixed;
+.sharetext {
+  color: #fff;
 }
-
-#navbar a
-{
-  padding-top: 2px;
-  font-size: 26px;
-  line-height: 20px;
-  margin-left: 3px;
-}
-
-#sharenav li
-{
-  list-style-image: none;
-  list-style: none;
-  margin-bottom: 5px;
-  display: inline; 
-}
-
-#sharenav ul
-{
-  margin-left: 125px;
-  padding-bottom: 0px;
-  margin-bottom: 7px;
-}
-
-#sharenav
-{
-width: 100%;
-}
-
-.sharetext
-{
-  margin-right: 10px;
-  margin-left: 19px;
-}
-
-#brand
-{
-  margin-left: 125px;
-  float: left;
-  clear: both;
-  color: gray;
-  cursor: pointer;
-  padding: 10px 15px 10px;
-  margin-top: 14px;
-  margin-bottom: 0px;
-  font-size: 36px;    
-  font-weight: bold;
-  text-shadow: 
-  0 0 2px orange, 
-  0 0 12px orangered;
-  color: whitesmoke;
-}
-
-#main_c
-{
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: 
-  0 0 6px purple, 
-  0 0 26px purple;
-}
-
-.sponsor
-{
-  height: 70px;
-  margin-bottom: 16px;
-}
-
-#talkbutton
-{
+#talkbutton {
   float: left;
   clear: right;
 }
-
-#signup_form
-{
-  background-color: whitesmoke; 
+#signup_form {
   top: 400px;
 }
-
-#gmap
-{
+#gmap {
   float: right;
   margin-left: 20px;
 }
-
-.anchor a
-{
-  width: 100%;
-  padding-bottom: 50px;
-  display: block;
-}
-
-.section
-{
-  margin: 80px;
-  padding: 70px;
-  background-color: #999D99;
-  margin-top: 150px;
-  box-shadow: 0 2px 16px rgba(0, 1, 1, 1)
-}
-
-#bottom
-{
-  font-size: 23px;
-  margin: 80px;
-  padding-left: 70px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: gray;
-  box-shadow: 0 2px 16px rgba(0, 1, 1, 1);
-  color: whitesmoke;
-}
-
-#bottom a
-{
-  margin-right: 12px;
-  margin: 0px;
-  padding: 0px;
-  font-size: 20px;
-}
-
 #OSConf-navbar-logo {
   margin-top: 3px;
 }
-
 #youlink {
   cursor: pointer;
-}
-
-.navbar-inner
-{
-  min-height: 99px;
-  border-bottom: none;
-  opacity: 1;
-  background-image: url('http://www.opentech2013.org/images/batthern.png');
-  background-repeat: repeat;
 }

@@ -53,9 +53,6 @@ $('#navbar li a').add('#fsp_c').bind('click',function(){
 	//regardless of whether it is showing alongside other things (since that should never happen)
 });
 
-//populate tumblr
-$('#blog_s').tumblr({hostname: 'opentechnyc.tumblr.com'});
-
 //hide all sections
 $('.section').css('display','none');
 
